@@ -14,7 +14,9 @@ function App() {
     <Router>
       <nav>
         <div className="logo">
-          <img src={logo} alt="Explore Japan Logo" />
+          <Link to="/">
+          <img src={logo} width="45px" alt="Explore Japan Logo" />
+          </Link>
         </div>
 
         <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
