@@ -1,12 +1,49 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Japan Explorer is a responsive, multi-screen React application
 
-Currently, two official plugins are available:
+Live Demo (https://japanexplorer2025.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features and technologies used.
 
-## Expanding the ESLint configuration
+NavBar
+React Router to handle the routing between application's pages
+Destinations/Home
+Weather
+Food
+Entertainment
+Hamburger menu for responsive design
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ 
+Destinaion sliders/Home page
+UseState hook to display cities and manage Show More/Show Less states
+Map() method to render images' slides
+Ternary operator (? :) - to handle Show More/Show Less buttons
+Substring() method to shorten description string
+
+Weather page
+UseEffect hook to call OpenWeather API
+UseState to display and manage API fetch
+Props to display api response objects from WeatherData.jsx file
+Input to search for a city
+Clicking on Search button triggers search
+Pressing on Enter key triggers search
+Alert() for handling empty and improper inputs
+
+Food page
+useState hook – to store food items and selected filters
+filter() method – to filter items by food category 
+map() method – to display each element
+
+Entertainment page
+useState hook – to manage the array of places to visit
+map() method – to displayy each element 
+Array functionality - remove a specific item, clear entire list
+filter() method - to remove a specific item from array, filter by id
+Modal UI  - display when the "Remove All" button is clicked. 
+
+
+
+
+
+
+
