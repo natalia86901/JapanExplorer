@@ -1,6 +1,7 @@
 import { useState } from "react";
-import { data } from "./data";
-import "./App.css";
+import { data } from "./foodData";
+import "../App.css";
+import "./Food.css";
 import Buttons from "./Buttons";
 
 function Food() {

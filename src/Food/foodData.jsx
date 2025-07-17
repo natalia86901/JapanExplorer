@@ -1,12 +1,12 @@
-import image1 from "./assets/SensAndSaveurs.jpg";
-import image2 from "./assets/Hikarimono sushi.jpg";
-import image3 from "./assets/Yoshitake sushi.jpg";
-import image4 from "./assets/Marugame Seimen.jpg";
-import image5 from "./assets/Tsukiji Udon Shop.jpg";
-import image6 from "./assets/Kanisenmon Keisuke.jpg";
-import image7 from "./assets/Nidaime Keisuke Ebi Soba Gaiden.jpg";
-import image8 from "./assets/Wagashi.jpg";
-import image9 from "./assets/Wagashi at Japanese Garden.jpg";
+import image1 from "../assets/SensAndSaveurs.jpg";
+import image2 from "../assets/Hikarimono sushi.jpg";
+import image3 from "../assets/Yoshitake sushi.jpg";
+import image4 from "../assets/Marugame Seimen.jpg";
+import image5 from "../assets/Tsukiji Udon Shop.jpg";
+import image6 from "../assets/Kanisenmon Keisuke.jpg";
+import image7 from "../assets/Nidaime Keisuke Ebi Soba Gaiden.jpg";
+import image8 from "../assets/Wagashi.jpg";
+import image9 from "../assets/Wagashi at Japanese Garden.jpg";
 
 export const data = [
   {

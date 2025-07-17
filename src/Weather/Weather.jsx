@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
-import "./App.css";
-import icon from "./assets/icons8-search-30.png";
+import "../App.css";
+import "./Weather.css"
+import icon from "../assets/icons8-search-30.png";
+
 import WeatherData from "./WeatherData";
 import Swal from "sweetalert2";
 
@@ -43,15 +45,15 @@ function Weather() {
     getCity("Tokyo");
   }, []);
 
-  const handleKeyPress = (e) => {
-    if (e.key === "Enter") {
-      getCity(mySearch);
-    }
-  };
-
   return (
     <div className="weather">
-      <div className="search-row">
+      <form
+        onSubmit={(e) => {
+          e.preventDefault();
+          getCity(mySearch);
+        }}
+        className="search-row"
+      >
         <input
           type="text"
           spellCheck="false"
@@ -59,12 +61,11 @@ function Weather() {
           className="search"
           value={mySearch}
           onChange={(e) => setMySearch(e.target.value)}
-          onKeyPress={handleKeyPress}
         />
         <button className="weather-button" onClick={() => getCity(mySearch)}>
           <img src={icon} alt="icon" />
         </button>
-      </div>
+      </form>
 
       {cityWeather && (
         <WeatherData

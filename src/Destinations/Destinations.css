@@ -1,0 +1,84 @@
+.showMore, .slider-buttons {
+border: none;
+}
+
+.showMore:hover, .slider-buttons:hover {
+  background-color: transparent;
+  color: #666;
+  border-color: transparent;
+}
+
+.nav-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.container-sliders {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1rem;
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 13px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.slider-buttons {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 48px;
+  width: 28px;
+  background-color: transparent;
+  border: none;
+  padding: 16px 6px;
+  cursor: pointer;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-buttons img {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1) drop-shadow(0 0 5px white); 
+}
+
+.slider-buttons:first-of-type {
+  left: 10px;
+}
+
+.slider-buttons:last-of-type {
+  right: 10px;
+}
+
+.container-sliders img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.3s ease
+}
+
+.city-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+
+.slider-buttons:first-of-type {
+  left: 5px;
+}
+
+.slider-buttons:last-of-type {
+  right: 5px;
+}
+}

@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { data3 } from "./data3";
-import backIcon from "./assets/backButton.png";
-import nextIcon from "./assets/nextButton.png";
-import "./App.css";
+import { data3 } from "./destinationsData";
+import backIcon from "../assets/backButton.png";
+import nextIcon from "../assets/nextButton.png";
+import "../App.css";
+import "./Destinations.css"
 
 function Destinations() {
   const [cities, setCities] = useState(data3);

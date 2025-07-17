@@ -1,8 +1,8 @@
-import image1 from "./assets/Metropolitan.png";
-import image2 from "./assets/National Museum.png";
-import image3 from "./assets/Kabuki-za Theatre.png";
-import image4 from "./assets/Hot springs.png";
-import image5 from "./assets/Garden.png";
+import image1 from "../assets/Metropolitan.png";
+import image2 from "../assets/National Museum.png";
+import image3 from "../assets/Kabuki-za Theatre.png";
+import image4 from "../assets/Hot springs.png";
+import image5 from "../assets/Garden.png";
 
 export const data1 = [
   {

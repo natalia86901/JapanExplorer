@@ -1,8 +1,9 @@
 import { useState } from "react";
-import { data1 } from "./data1";
-import "./App.css";
-import Content from "./Modal/Content";
-import Modal from "./Modal/Modal";
+import { data1 } from "./entertainmentData";
+import "../App.css";
+import Content from "../Modal/Content";
+import Modal from "../Modal/Modal";
+import "../Modal/Modal.css"
 
 function Entertainment() {
   const [places, setPlaces] = useState(data1);

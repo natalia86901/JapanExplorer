@@ -1,0 +1,42 @@
+.restaurants {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding-top: 1rem;
+}
+
+
+.restaurants > div {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.restaurants > div:hover {
+  transform: translateY(-5px);
+}
+
+.restaurants img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.restaurants h3 {
+  margin: 0.5rem 1rem 0 1rem;
+  font-size: 1.2rem;
+  color: #111;
+}
+
+.restaurants h4 {
+  margin: 0.25rem 1rem;
+  font-size: 1rem;
+  color: #666;
+}
+
+.restaurants a:hover {
+  text-decoration: underline;
+}

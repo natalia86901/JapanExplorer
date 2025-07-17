@@ -1,0 +1,65 @@
+nav {
+  display: flex;
+  justify-content:space-between;
+  padding: 15px;
+}
+
+.logo img {
+height: 45px;
+}
+
+.link {
+  padding: 10px 40px;
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px
+}
+
+@media (max-width: 800px) {
+
+  nav {
+    position: relative;
+    z-index: 10; 
+  }
+  
+  .hamburger {
+    display: flex; 
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+    position:absolute;
+    top: 60px;
+    left: 70px;
+    padding: 10 px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+}

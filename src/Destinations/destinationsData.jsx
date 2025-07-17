@@ -1,17 +1,17 @@
-import image1a from "./assets/Takayama.png";
-import image1b from "./assets/Takayama1.png";
-import image1c from "./assets/Takayama2.png";
-import image2a from "./assets/Kanazawa.png";
-import image2b from "./assets/Kanazawa1.png";
-import image3a from "./assets/Kyoto.png";
-import image3b from "./assets/Kyoto1.png";
-import image3c from "./assets/Kyoto2.png";
-import image4a from "./assets/Fuji.png";
-import image4b from "./assets/Fuji1.png";
-import image4c from "./assets/Fuji2.png";
-import image5a from "./assets/Nagano.png";
-import image5b from "./assets/Nagano1.png";
-import image5c from "./assets/Nagano2.png";
+import image1a from "../assets/Takayama.png";
+import image1b from "../assets/Takayama1.png";
+import image1c from "../assets/Takayama2.png";
+import image2a from "../assets/Kanazawa.png";
+import image2b from "../assets/Kanazawa1.png";
+import image3a from "../assets/Kyoto.png";
+import image3b from "../assets/Kyoto1.png";
+import image3c from "../assets/Kyoto2.png";
+import image4a from "../assets/Fuji.png";
+import image4b from "../assets/Fuji1.png";
+import image4c from "../assets/Fuji2.png";
+import image5a from "../assets/Nagano.png";
+import image5b from "../assets/Nagano1.png";
+import image5c from "../assets/Nagano2.png";
 
 export const data3 = [
   {

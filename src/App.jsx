@@ -1,54 +1,15 @@
-import React, { useState } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Food from "./Food";
-import Destinations from "./Destinations";
-import Weather from "./Weather";
-import Entertainment from "./Entertainment";
-import logo from "./assets/ExploreJapan.png";
+import Food from "./Food/Food";
+import Destinations from "./Destinations/Destinations";
+import Weather from "./Weather/Weather";
+import Entertainment from "./Entertainment/Entertainment";
+import Menu from "./Menu/Menu";
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
     <Router>
-      <nav>
-        <div className="logo">
-          <Link to="/">
-          <img src={logo} width="45px" alt="Explore Japan Logo" />
-          </Link>
-        </div>
-
-        <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-          <div className="bar"></div>
-          <div className="bar"></div>
-          <div className="bar"></div>
-        </div>
-
-        <div className={`nav-links ${menuOpen ? "open" : ""}`}>
-          <Link to="/" className="link" onClick={() => setMenuOpen(false)}>
-            Destinations
-          </Link>
-          <Link
-            to="/Weather"
-            className="link"
-            onClick={() => setMenuOpen(false)}
-          >
-            Weather
-          </Link>
-          <Link to="/Food" className="link" onClick={() => setMenuOpen(false)}>
-            Food
-          </Link>
-          <Link
-            to="/Entertainment"
-            className="link"
-            onClick={() => setMenuOpen(false)}
-          >
-            Entertainment
-          </Link>
-        </div>
-      </nav>
-
+      <Menu />
       <Routes>
         <Route path="/" element={<Destinations />} />
         <Route path="/Weather" element={<Weather />} />
